@@ -280,20 +280,21 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
 
-  var otro=[], j=0, suma;
+  var otro=[];
+
   for(i=0; i<10;i++)
-  {
-    suma=numero+2;
-    if(suma!==i)
+  {      
+    if(numero!==i)
     {
-      otro[j];
-      j++
+      numero=numero+2;  
+      otro[i]=numero;
     }
     else
     {
     return 'Se interrumpió la ejecución';
     break;
     }
+ 
   }
   return otro;
 
@@ -307,6 +308,26 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var otro=[];
+  for(i=0; i<10; i++)
+  {
+    if(i===4)
+    {
+      continue;
+    }
+    else if(i<4)
+    {
+      numero=numero+2;
+      otro[i]=numero;      
+    }
+    else
+    {
+      numero=numero+2;
+      otro[i-1]=numero;    
+    }
+    
+  }
+  return otro;
 }
 
 
