@@ -325,7 +325,6 @@ function continueStatement(numero) {
       numero=numero+2;
       otro[i-1]=numero;    
     }
-    
   }
   return otro;
 }
