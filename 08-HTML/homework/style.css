@@ -7,8 +7,7 @@ img{
     background-color: orange;
     color:brown; 
     padding: 50px; 
-    border: pink 5px solid;
-    align-items: center;
+    border: blue 10px solid;
 }
 #spanId{
     font-size: 18px; 
